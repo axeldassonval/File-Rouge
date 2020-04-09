@@ -1,0 +1,152 @@
+
+                                        /*Home*/
+/*=========================================================================================================*/
+  .row{
+    margin: 0rem !important;
+  }
+
+  body {
+    background: no-repeat url("../images/background/background_village.png") fixed;
+    background-size: cover;
+    padding: auto;
+  }
+
+  .bodyCentre {
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: #e7e7e7;
+  }
+
+  #image_entete {
+    padding: 0rem;
+  }
+
+  .imagePromo {
+    margin: 2rem;
+  }
+
+  .imagePub {
+    max-height: 30rem;
+  }
+
+  .image1{
+    margin-right: 2rem;
+  }
+
+  #banderolMilieu {
+    padding: 0rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .titre{
+    text-align: center;
+  }
+
+  #petit{
+    margin-right: 5rem;
+    margin-left: 5rem;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  #different{
+    margin-bottom: 1rem;
+    margin-left: 0rem;
+    background-color: #333333;
+  }
+
+  #most{
+    padding-right: 0rem !important;
+  }
+
+  #partenaire{
+  max-width: 100%;
+  max-height: 18rem;
+  }
+
+  .instru{
+    margin-bottom: 0.2rem;
+    width: auto;
+    max-height: 17.5rem;
+  }
+
+  .centre{
+    margin: auto;
+    text-align: center;
+  }
+                                        /*navBarre*/
+/*=========================================================================================================*/
+  #navBarre {
+    background: no-repeat url("../images/header/3_bandes.png");
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  #navbar{
+    position: absolute;
+    right: 0rem;
+  }
+  #navbar2{
+    position: absolute;
+    top: 3.4rem;
+    right: 0rem;
+  }
+  #navbar3{
+    position: absolute;
+    top: 6.4rem;
+    right: 0rem;
+    font-size: 0.9rem;
+  }
+
+  #nav1 li{
+    padding-right: 2rem;
+    list-style: none;
+    display: inline-block;
+  }
+
+  #nav1 li a{
+    text-align: center;
+    color: black;
+  }
+
+  #nav2 li{
+    padding-right: 2rem;
+    list-style: none;
+    display: inline-block;
+  }
+
+  #nav2 li a{
+    text-align: center;
+    color: white;
+  }
+  #nav3 li{
+    padding: 0.2rem;
+    list-style: none;
+    display: inline-block;
+  }
+
+  #nav3 li a{
+
+    text-align: center;
+    color: white;
+  }
+
+                                          /*Footer*/
+/*=========================================================================================================*/
+
+  footer{
+    font-size: 1rem;
+    margin-top: 1rem;
+    background: no-repeat url("../images/footer/images.png");
+    color: ivory;
+  }
+                                          /*Infos*/
+/*=========================================================================================================*/
+
+                                          /*Produits*/
+/*=========================================================================================================*/
+
+                                          /*Histoire*/
+/*=========================================================================================================*/
