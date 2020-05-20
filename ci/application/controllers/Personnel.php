@@ -1,14 +1,21 @@
 <?php
-// application/controllers/Produits.php
-defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Client extends CI_Controller
-{
-    public function inscription()
-    {
+	defined('BASEPATH') OR exit('No direct script access allowed');
+
+	class Personnel extends CI_Controller
+	{
 
 
-        public function ajouter_client()
+		public function liste_personnel()
+		{
+
+			$resultat["personnel"] = $this->crud_personnel->liste();
+			$this->load->view('header');
+			$this->load->view('liste_personnel',$resultat);
+			$this->load->view('footer');
+		}
+
+		public function ajouter_personnel()
 		{
 			$email = "/.+@.+\..+/";
 			$base = "/^[a-zA-ZÀ-ú\-\s]*/";
@@ -23,7 +30,7 @@ class Client extends CI_Controller
 				$this->form_validation->set_rules('nom','nom',"required|regex_match[$base]",array('required' => 'Il faut un %s ','regex_match' => 'Il faut un %s '));
 				$this->form_validation->set_rules('prenom','prenom',"required|regex_match[$base]",array('required' => 'Il faut un %s ','regex_match' => 'Il faut un %s '));
 				$this->form_validation->set_rules('service','service',"required|regex_match[$base]",array('required' => 'Il faut un %s ','regex_match' => 'Il faut un %s '));
-				$this->form_validation->set_rules('type','type',"required|regex_match[$base]",array('required' => 'Il faut un %s ','regex_match' => 'Il faut un %s '));
+				$this->form_validation->set_rules('identifiant','identifiant',"required|regex_match[$base]",array('required' => 'Il faut un %s ','regex_match' => 'Il faut un %s '));
 				$this->form_validation->set_rules('mdp','mdp',"required|regex_match[$mdp]",array('required' => 'Il faut un %s ','regex_match' => 'Il faut un %s '));
 				$this->form_validation->set_rules('matricule','matricule',"required|regex_match[$chiffreEtLettre]",array('required' => 'Il faut un %s ','regex_match' => 'Il faut un %s '));
 				$this->form_validation->set_rules('email','email',"required|regex_match[$email]",array('required' => 'Il faut un %s ','regex_match' => 'Il faut un %s '));
@@ -34,8 +41,9 @@ class Client extends CI_Controller
 				{
 					$resultat["personnel"] = $this->crud_personnel->liste();
 					$this->load->view('header');
-                    $this->load->view('inscription');
-                    $this->load->view('footer');
+					echo "error";
+					$this->load->view('liste_personnel',$resultat);
+					$this->load->view('footer');
 				}
 				else
 				{
@@ -60,14 +68,14 @@ class Client extends CI_Controller
 			{ // 1er appel de la page: affichage du formulaire
 				$resultat["personnel"] = $this->crud_personnel->liste();
 				$this->load->view('header');
-                $this->load->view('inscription');
-                $this->load->view('footer');
+				$this->load->view('liste_personnel',$resultat);
+				$this->load->view('footer');
 			}
 		}
 		public function modifier_personnel($id)
 		{
-			$personnel=$this->crud_client->clientID($id);
-			$resultat["client"]=$client;
+			$personnel=$this->crud_personnel->personnelID($id);
+			$resultat["personnel"]=$personnel;
 			if($this->input->post())
 			{
 				$email = "/.+@.+\..+/";
@@ -89,7 +97,7 @@ class Client extends CI_Controller
 				if($this->form_validation->run() == FALSE)
 				{
 					$this->load->view('header');
-					$this->load->view('modification',$resultat);
+					$this->load->view('modification_personnel',$resultat);
 					$this->load->view('footer');
 				}
 				else
@@ -112,8 +120,8 @@ class Client extends CI_Controller
 			else
 			{
 				$this->load->view('header');
-                $this->load->view('inscription');
-                $this->load->view('footer');
+				$this->load->view('modification_personnel',$resultat);
+				$this->load->view('footer');
 			}
 		}
 		public function supprimer_personnel($id)
@@ -121,7 +129,5 @@ class Client extends CI_Controller
 			$this->crud_personnel->supprimer($id);
 			redirect('personnel/liste_personnel');
 		}
-    }
-}
-
+	}
 ?>

@@ -6,7 +6,11 @@ class Histoire extends CI_Controller
 {
     public function villagegreen()
     {
+
+        $this->load->view('header');
         $this->load->view('villagegreen');
+        $this->load->view('footer');
+
     }
 }
 

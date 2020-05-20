@@ -6,7 +6,10 @@ class Information extends CI_Controller
 {
     public function infos()
     {
+        $this->load->view('header');
         $this->load->view('infos');
+        $this->load->view('footer');
+
     }
 }
 
