@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array("database","form_validation");
+$autoload['libraries'] = array("database","form_validation",'javascript','session');
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +132,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array("crud_personnel","crud_produits","Categorie","fournisseur");
+$autoload['model'] = array("crud_personnel","crud_produits","crud_client","Categorie","fournisseur");

@@ -5,6 +5,11 @@
     margin: 0rem !important;
   }
 
+  .alignetoi{
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
   body {
     background: no-repeat url("../images/background/background_village.png") fixed;
     background-size: cover;
@@ -56,13 +61,18 @@
     background-color: #333333;
   }
 
+  .espace{
+    margin-bottom: 1rem;
+  }
   #most{
+    margin-bottom: 1rem;
     padding-right: 0rem !important;
   }
 
   #partenaire{
   max-width: 100%;
   max-height: 18rem;
+  margin-bottom: 1rem;
   }
 
   .instru{
@@ -93,49 +103,31 @@
     position: absolute;
     right: 0rem;
   }
-  #navbar2{
-    position: absolute;
-    top: 3.4rem;
-    right: 0rem;
-  }
-  #navbar3{
-    position: absolute;
-    top: 6.4rem;
-    right: 0rem;
-    font-size: 0.9rem;
+  span .nav_text{
+    color: white !important;
   }
 
-  #nav1 li{
-    padding-right: 2rem;
-    list-style: none;
-    display: inline-block;
+  .droite{
+    padding-left: 15rem;
   }
 
-  #nav1 li a{
-    text-align: center;
-    color: black;
+  .navbare{
+    float: right;
+    clear: right;
+    padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
   }
-
-  #nav2 li{
-    padding-right: 2rem;
-    list-style: none;
-    display: inline-block;
+  .boutton_navbare{
+    float: right;
+    clear: right;
+    width: 20rem !important;
+    margin-bottom: 1rem;
+    margin-top: 0.3rem;
   }
-
-  #nav2 li a{
-    text-align: center;
-    color: white;
-  }
-  #nav3 li{
-    padding: 0.2rem;
-    list-style: none;
-    display: inline-block;
-  }
-
-  #nav3 li a{
-
-    text-align: center;
-    color: white;
+  .alignement{
+    float: right;
+    clear: right;
+    text-align: right;
   }
 
                                           /*Footer*/
@@ -145,6 +137,10 @@
     font-size: 1rem;
     background: no-repeat url("../images/footer/images.png");
     color: ivory;
+  }
+  .image_bouton{
+    width: 2rem;
+    height: auto;
   }
                                           /*Infos*/
 /*=========================================================================================================*/
@@ -214,4 +210,99 @@ tbody td{
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+                                          /*Formulaire*/
+/*=========================================================================================================*/
+span{
+  margin-right: auto !important;
+  margin-left: auto !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+input{
+  margin-right: auto !important;
+  margin-left: auto !important;
+  max-width: 15rem;
+  border-radius: 1rem;
+}
+.bouton_valider{
+  color: aliceblue;
+  background-color: rgb(156, 69, 6);
+  font-size: 1.5rem;
+  width: 13rem !important;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  transition: transform .2s;
+}
+.bouton_valider:hover{
+  transform: scale(1.2);
+}
+select{
+  width: 8rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+form {
+  margin-left: auto !important;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-right: auto !important;
+}
 
+.basdepage{
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.titre{
+  font-size: 1.5rem;
+}
+
+.connexion{
+  background-color: rgba(243, 243, 243, 0.781);
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+
+.connexion span{
+  font-size: 1rem;
+  margin-left: 1rem !important;
+  margin-bottom: 1rem !important;
+  margin-right: 1rem !important;
+}
+
+.connexion input{
+  width: 15rem;
+  margin-left: 1rem !important;
+  margin-bottom: 1rem !important;
+  margin-right: 1rem !important;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+
+.bouton_connexion{
+  margin: 1rem;
+  width: 15rem;
+  color: white;
+  background-color: rgba(0, 102, 255, 0.76);
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+.titre_connexion{
+  margin: 1rem;
+  font-size: 1.5rem !important;
+}
+.separateur{
+  border-bottom: solid 0.1rem;
+}
+
+.adroite{
+  float: right;
+  clear: right;
+}
+.petit{
+ font-size: 0.8rem;
+}

@@ -2,19 +2,19 @@
 
 			<div class="imagePromo centre">
 				<img src="<?= base_url('assets/images/body/pub_guitare.png');?>" class="img-fluid imagePub image1">
-				<img src="<?= base_url('assets/images/body/banniere_livraison.png');?>" class="img-fluid imagePub">
+				<img src="<?= base_url('assets/images/body/banniere_livraison.png');?>" class="img-fluid imagePub d-none d-xl-inline">
 			</div>
 
 			<img src="<?= base_url('assets/images/body/banniere_centre.png');?>" class="col-12 " id="banderolMilieu">
 
 			<h2 class="col-12">Nos catégories</h2>
 
-			<div class="col-xl-6 col-12 centre">
+			<div class="col-xl-6 col-12 centre espace">
 				<h3 class="titre">Instruments</h3>
 				<img class="img-fluid " src="<?= base_url('assets/images/body/instrument.png');?>">
 			</div>
 
-			<div class="col-xl-6 col-12 centre">
+			<div class="col-xl-6 col-12 centre espace">
 				<h3 class="titre">Accessoires</h3>
 				<img class="img-fluid " src="<?= base_url('assets/images/body/accessoire.png');?>">
 			</div>

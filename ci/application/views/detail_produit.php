@@ -25,7 +25,7 @@
 	</div>
 	<div class="col-6">
 		<h5>Description</h5><br>
-		<p><?=$data->PRO_DESCRIPTION?>"</p><br>
+		<p><?=$data->PRO_DESCRIPTION?></p><br>
 	</div>
 	<br>
 	<div class="col-6">

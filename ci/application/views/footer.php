@@ -1,6 +1,6 @@
 <footer class="row">
 			<div class="col-12 row" id="different">
-				<div class="col-7"><p>h</p></div>
+				<div class="col-7"><a href="#imageEntete"><button class="bouton_valider">Haut de page <img src="<?= base_url('assets/images/body/vers_haut.PNG');?>" alt="" class="image_bouton"></button></a></div>
 				<div class="col-5">
 				<img src="<?= base_url('assets/images/footer/logo_payement.PNG');?>" alt="" class="img-fluid logo">
 				</div>

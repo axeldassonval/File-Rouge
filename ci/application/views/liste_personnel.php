@@ -93,7 +93,8 @@
 							<input type="password"name="mdp" id="mdp">
 							<?php echo form_error('mdp'); ?>
 						</div>
-						<button>Ajouter</button>
+						<br>
+						<button class="bouton_valider">Ajouter</button>
 					<?php echo form_close(); ?>
 				</div>
 			</div>

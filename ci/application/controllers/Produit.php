@@ -85,11 +85,11 @@
 			if($this->input->post())
 			{
 				$base = "/^[a-zA-ZÀ-ú\-\s]*/";
-				$chiffreEtLettre = "/^[a-zA-Z0-9_]+$/";
+				$chiffreEtLettre = "/^[a-zA-Z0-9_\s.,']+$/";
 				$mdp = "/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[-+!*$@%_])([-+!*$@%_\w]{8,15})$/";
 				$chiffre = "/[0-9]{1,9}/";
 
-				$this->form_validation->set_rules('libelle','libelle',"required|regex_match[$chiffreEtLettre]",array('required' => 'Il faut un %s ','regex_match' => 'Il faut un %s '));
+				$this->form_validation->set_rules('libelle','libelle',"required|regex_match[$chiffreEtLettre]",array('required' => 'Il faut un %s ','regex_match' => 'erreur de %s '));
 				$this->form_validation->set_rules('marque','marque',"required|regex_match[$chiffreEtLettre]",array('required' => 'Il faut un %s ','regex_match' => 'Il faut un %s '));
 				$this->form_validation->set_rules('reference','référence',"required|regex_match[$chiffreEtLettre]",array('required' => 'Il faut un %s ','regex_match' => 'Il faut un %s '));
 				$this->form_validation->set_rules('categorie','catégorie',"required|regex_match[$base]",array('required' => 'Il faut un %s ','regex_match' => 'Il faut un %s '));
