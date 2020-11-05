@@ -30,10 +30,12 @@
 										<a class="nav-link" href="<?= site_url('information/infos'); ?>">Infos</a>
 									</li>
 									<li class="nav-item active">
-										<?php if($this->session->connecter == "oui") {?>
-											<a class="nav-link" href="<?= site_url('client/espace_personnelle'); ?>">Espace Client</a>
-										<?php } else { ?>
+										<?php if($this->session->connecter != "oui") {?>
 											<a class="nav-link" href="<?= site_url('login/connexion'); ?>">Connexion</a>
+										<?php }elseif ($this->session->employer == 1){ ?>
+											<a class="nav-link" href="<?= site_url('client/espace_pro'); ?>">Espace Professionnel</a>
+										<?php }else { ?>
+											<a class="nav-link" href="<?= site_url('client/espace_personnelle'); ?>">Espace Client</a>
 										<?php } ?>
 
 									</li>

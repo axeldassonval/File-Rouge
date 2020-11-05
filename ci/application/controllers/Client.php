@@ -64,10 +64,11 @@ class Client extends CI_Controller
 					'CLI_VILLE' => $ajout['ville'],
 					'CLI_CODE_POSTAL' => $ajout['code_postal'],
 					'CLI_COEFFICIENT' => 1,
+					'UTI_EMPLOYER' => 0,
 					'CLI_DATE_INSCRIPTION' => date('Y-m-d')
 					);
 				$this->crud_client->ajouter($data);
-				redirect('client/espace_personnel');
+				redirect('client/espace_personnelle');
 			}
 		}
 		else
@@ -146,6 +147,12 @@ class Client extends CI_Controller
 	{
 		$this->load->view('header');
 		$this->load->view('espace_personnelle');
+		$this->load->view('footer');
+	}
+	public function espace_pro()
+	{
+		$this->load->view('header');
+		$this->load->view('espace_pro');
 		$this->load->view('footer');
 	}
 	public function liste_client()

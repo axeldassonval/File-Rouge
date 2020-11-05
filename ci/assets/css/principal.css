@@ -9,6 +9,9 @@
     margin-right: auto !important;
     margin-left: auto !important;
   }
+  button{
+  	border-radius: 0.3rem;
+  }
 
   body {
     background: no-repeat url("../images/background/background_village.png") fixed;
@@ -291,6 +294,14 @@ form {
   border: 1px solid black;
   border-radius: 0.3rem;
 }
+.bouton_employer{
+  margin: 1rem;
+  width: 15rem;
+  color: white;
+  background-color: rgba(255, 102, 0, 0.76);
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
 .titre_connexion{
   margin: 1rem;
   font-size: 1.5rem !important;
@@ -306,3 +317,16 @@ form {
 .petit{
  font-size: 0.8rem;
 }
+.bordure{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+.bordure form{
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+

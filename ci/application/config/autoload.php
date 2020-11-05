@@ -132,4 +132,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array("crud_personnel","crud_produits","crud_client","Categorie","fournisseur");
+$autoload['model'] = array("crud_personnel","crud_produits","crud_client","crud_login","Categorie","fournisseur");

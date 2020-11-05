@@ -1,4 +1,5 @@
 
+
 	<h1>Liste du personnel</h1>
 
 	<div class="row">
@@ -36,7 +37,7 @@
 			</table>
 		</div>
 	</div>
-	<div class="accordion" id="accordionExample">
+	<div class="accordion col-12" id="accordionExample">
 		<div class="card">
 			<div class="card-header" id="headingOne">
 				<h2 class="mb-0">

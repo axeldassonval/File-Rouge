@@ -47,8 +47,6 @@
 				}
 				else
 				{
-
-
 					$data = array(
 						'PER_NOM' => $ajout['nom'],
 						'PER_PRENOM' => $ajout['prenom'],
